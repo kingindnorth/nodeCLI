@@ -11,9 +11,9 @@ const UserSchema = new mongoose.Schema({
     },
     email:{
         type:String,
-        default:`${firstName}.${lastName}@gmail.com`
+        default:`john.Doe@gmail.com`
     },
-    contact:{
+    phone:{
         type:String,
     }
 })

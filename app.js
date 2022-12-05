@@ -2,9 +2,9 @@ const mongoose = require("mongoose")
 const User = require("./models/User")
 require("dotenv").config()
 
-await mongoose.connect(process.env.DB)
-
-console.log("db connected")
+const db = mongoose.connect(process.env.DB).then(()=>{
+    console.log("connected to DB");
+})
 
 const addUser = async(user) =>{
     await User.create(user)
