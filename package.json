@@ -12,6 +12,7 @@
   "dependencies": {
     "commander": "^9.4.1",
     "dotenv": "^16.0.3",
+    "inquirer": "^8.1.4",
     "mongoose": "^6.7.5"
   }
 }
